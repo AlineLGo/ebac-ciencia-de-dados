@@ -15,7 +15,7 @@ Abaixo estão as visualizações geradas durante o processo de Análise Explorat
 ![Dispersão](Dispersão.png)
 
 ### 3. Correlação entre Variáveis Numéricas (Mapa de Calor)
-![Mapa de Calor](Mapa de Calor.png)
+![Mapa de Calor](Mapa%20de%20Calor.png)
 
 ### 4. Top 5 Gêneros (Gráfico de Barras)
 ![Gráfico de Barras](Barra.png)
