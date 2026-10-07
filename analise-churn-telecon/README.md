@@ -1,4 +1,5 @@
 Projeto: Análise de Dados de Churn em Telecomunicações
+
 📋 Sobre o Projeto
 Este projeto tem como objetivo analisar o comportamento de clientes de uma empresa de telecomunicações para identificar os principais fatores associados ao cancelamento de serviços (Churn). O pipeline do projeto abrange a limpeza e tratamento de dados, análise descritiva, tratamento de outliers e uma análise bivariada aprofundada para apoiar decisões estratégicas de retenção.
 
