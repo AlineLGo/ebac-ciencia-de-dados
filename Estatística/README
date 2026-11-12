@@ -1,0 +1,50 @@
+# Análise Estatística: Efetividade de Duas Estratégias de Ensino
+
+Projeto desenvolvido como parte do módulo de Estatística Aplicada, simulando um cenário real de ciência de dados para avaliar se existe diferença estatisticamente significativa no desempenho de alunos submetidos a duas estratégias diferentes de ensino de matemática.
+
+---
+
+## 🎯 Objetivo do Projeto
+Comparar o desempenho de duas amostras de alunos (Estratégia A e Estratégia B) utilizando ferramentas de estatística inferencial em Python, a fim de auxiliar a gestão escolar na tomada de decisão baseada em dados.
+
+---
+
+## 📊 Metodologia e Etapas
+
+1. **Definição de Hipóteses:**
+   * **Hipótese Nula ($H_0$):** A média das notas da Estratégia A é igual à média da Estratégia B ($\mu_A = \mu_B$).
+   * **Hipótese Alternativa ($H_1$):** A média das notas da Estratégia B é maior do que a da Estratégia A ($\mu_B > \mu_A$).
+
+2. **Classificação do Teste:**
+   * Como o objetivo é testar se a Estratégia B é estritamente *maior* que a Estratégia A, o teste foi classificado como **Unilateral à Direita**.
+
+3. **Análise Descritiva:**
+   * **Estratégia A:** Média de 71.40 | Variância de 126.68
+   * **Estratégia B:** Média de 74.74 | Variância de 108.26
+   * *Insight:* Descritivamente, a Estratégia B apresentou notas maiores e mais consistentes (menor dispersão/variância).
+
+4. **Teste de Hipóteses (Teste Z):**
+   * **Nível de Significância ($\alpha$):** 0.05 (5%)
+   * **Estatística Z calculada:** 1.53
+   * **P-value obtido:** 0.063
+
+5. **Decisão Estatística:**
+   * Como o *p-value* ($0.063$) foi **maior** que o nível de significância de $0.05$, **não rejeitamos a Hipótese Nula ($H_0$)**.
+
+---
+
+## 📉 Visualização Gráfica
+O gráfico da distribuição normal padrão gerado com `matplotlib` ilustra que a estatística de teste ($Z = 1.53$) parou antes de atingir o valor crítico de corte ($Z = 1.64$), ficando fora da área de rejeição (região crítica de 5%). 
+
+---
+
+## 📌 Conclusão
+Apesar da Estratégia B apresentar uma média superior na amostra analisada, a diferença **não é estatisticamente significativa** para um nível de significância de 5%. Portanto, estatisticamente, as duas estratégias entram em empate técnico, indicando que a variação observada pode ter ocorrido por acaso amostral.
+
+---
+
+## 🛠️ Tecnologias e Bibliotecas Utilizadas
+* **Python**
+* **NumPy** (Manipulação de arrays e cálculos descritivos)
+* **SciPy / Statsmodels** (Execução do Teste Z)
+* **Matplotlib** (Visualização de dados e plotagem da curva normal)
